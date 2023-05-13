@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+@keyframes myFirstAnimation {
+ 0% {
+  background-color: rgb(174, 122, 223);  
+  }
+  30% {
+   background-color: rgb(12, 41, 205);
+  }
+  72% {
+   background-color: rgb(206, 23, 44); 
+  }
+  100% {
+    background-color: rgb(84, 189, 27);
+  }
+}
+.btn {
+    padding: 20px 30px;
+    background-color: rgb(174, 122, 223);
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .6s;
+    animation: myFirstAnimation .6s infinite;
+} 
+.btn:hover {
+    background-color: blue;
+    border-color: red;
+    color: black;
+}
+header {
+    background-color: rgb(123, 175, 221);
+    padding: 10px 10px;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+ul li {
+ background-color: rgba(154, 36, 36, .6);
+ border-radius: 6px;
+ padding: 20px 30px;
+ border: 2px solid transparent;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+ ul li:not(:last-child) {
+    margin-right: 10px;
+ }
+img {
+    width: 200px;
+    height: 200px;
+}
+section {
+    min-height: 100vh;
+}
